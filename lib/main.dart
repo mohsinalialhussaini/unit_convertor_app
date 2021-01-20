@@ -7,9 +7,11 @@ import 'package:unit_convertor_app/Language/urdu.dart';
 // import 'package:unit_convertor_app/Units/area.dart';
 // import 'package:unit_convertor_app/Units/data_transfer_rate.dart';
 // import 'package:unit_convertor_app/Units/energy.dart';
-// import 'package:unit_convertor_app/Units/frequency.dart';
-// import 'package:unit_convertor_app/Units/length.dart';
-// import 'package:unit_convertor_app/Units/mass.dart';
+import 'package:unit_convertor_app/Units/frequency.dart';
+import 'package:unit_convertor_app/Units/length.dart';
+import 'package:unit_convertor_app/Units/mass.dart';
+
+import 'Units/fuel_economy.dart';
 // import 'package:unit_convertor_app/Units/speed.dart';
 // import 'package:unit_convertor_app/Units/time.dart';
 // import 'package:unit_convertor_app/Units/digital_storage.dart';
@@ -27,10 +29,11 @@ void main() {
       // 'Rate' : (context) => Rate(),
       // 'Storage' : (context) => Storage(),
       // 'Energy' : (context) => Energy(),
-      // 'Frequency' : (context) => Frequency(),
-      // 'Length' : (context) => Length(),
+      'Frequency' : (context) => Frequency(),
+      'Length' : (context) => Length(),
       // 'Time' : (context) => Time(),
-      // 'Mass' : (context) => Mass(),
+      'Mass' : (context) => Mass(),
+      'Fuel_Economy' : (context) => Fuel_Economy(),
       // 'Speed' : (context) => Speed(),
 
     },

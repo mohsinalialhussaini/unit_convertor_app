@@ -12,7 +12,7 @@ class _HindiState extends State<Hindi> {
         Padding(
             padding: EdgeInsets.all(10),
             child: GridView.builder(
-                itemCount: 10,
+                itemCount: 11,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
                     crossAxisSpacing: 7.2,
@@ -98,6 +98,15 @@ class _HindiState extends State<Hindi> {
                         borderRadius: BorderRadius.all(Radius.circular(20)),
                       ),
                       child: TilebuttonMenu(context,'आवृत्ति',Colors.teal,'Icons/frequency.png', 'Frequency'),
+                    );
+                  }
+                  else if (index == 10) {
+                    return Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      child: TilebuttonMenu(context, 'ईंधन की ', Colors.pinkAccent,
+                          'Icons/fuel.png', 'Fuel_Economy'),
                     );
                   }
                 }

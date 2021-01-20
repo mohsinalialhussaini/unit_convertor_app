@@ -12,7 +12,7 @@ class _ArabicState extends State<Arabic> {
         Padding(
             padding: EdgeInsets.all(10),
             child: GridView.builder(
-                itemCount: 10,
+                itemCount: 11,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
                     crossAxisSpacing: 7.2,
@@ -99,6 +99,15 @@ class _ArabicState extends State<Arabic> {
                         borderRadius: BorderRadius.all(Radius.circular(20)),
                       ),
                       child: TilebuttonMenu(context,'تكرر',Colors.teal,'Icons/frequency.png', 'Frequency'),
+                    );
+                  }
+                  else if (index == 10) {
+                    return Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      child: TilebuttonMenu(context, 'اقتصاد الوقود', Colors.pinkAccent,
+                          'Icons/fuel.png', 'Fuel_Economy'),
                     );
                   }
                 }

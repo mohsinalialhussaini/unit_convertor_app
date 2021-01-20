@@ -11,7 +11,7 @@ class _UrduState extends State<Urdu> {
     return (Padding(
         padding: EdgeInsets.all(10),
         child: GridView.builder(
-            itemCount: 10,
+            itemCount: 11,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
                 crossAxisSpacing: 7.2,
@@ -98,6 +98,15 @@ class _UrduState extends State<Urdu> {
                   ),
                   child: TilebuttonMenu(context, 'تعدد', Colors.teal,
                       'Icons/frequency.png', 'Frequency'),
+                );
+              }
+              else if (index == 10) {
+                return Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
+                  child: TilebuttonMenu(context, 'تیل کی معیشت', Colors.pinkAccent,
+                      'Icons/fuel.png', 'Fuel_Economy'),
                 );
               }
             })));
