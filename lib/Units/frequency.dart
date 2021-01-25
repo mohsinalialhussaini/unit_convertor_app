@@ -37,7 +37,7 @@ class _FrequencyState extends State<Frequency> {
     return Scaffold(
 
       appBar: AppBar(
-        title: Text('Temperature Converter'),
+        title: Text('Frequency Converter'),
         centerTitle: true,
         backgroundColor: Colors.teal,
       ),

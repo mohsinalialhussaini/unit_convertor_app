@@ -41,7 +41,7 @@ class _MassState extends State<Mass> {
     return Scaffold(
 
       appBar: AppBar(
-        title: Text('Temperature Converter'),
+        title: Text('Mass Converter'),
         centerTitle: true,
         backgroundColor: Colors.brown,
       ),
